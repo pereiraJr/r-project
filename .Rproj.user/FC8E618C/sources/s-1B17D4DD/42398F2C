@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1528223233221.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "42398F2C",
+    "lastKnownWriteTime" : 1528222540,
+    "last_content_update" : 1528223233221,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "B3C4B875",
+        "caption" : "smellsMaio",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=smellsMaio&cache_key=B3C4B875",
+        "displayedObservations" : "629",
+        "environment" : "",
+        "object" : "smellsMaio",
+        "preview" : "0",
+        "totalObservations" : "629",
+        "variables" : "10"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

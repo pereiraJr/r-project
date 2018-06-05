@@ -1,0 +1,31 @@
+smellsAbril <- read.csv('data/bad_smells_abril.csv', header = TRUE)
+smellsMaio <- read.csv('data/bad_smells_maio.csv', header = TRUE)
+
+smellsAbrilOrdered <- smellsAbril[,sort(smellsAbril$BLOB)]
+
+numCol <- ncol(smellsAbril)
+
+maioSum <-sum(smellsAbril[,-1:-2])
+abrilSum <- sum(smellsMaio[,-1:-2])
+
+colSum <- colSums(smellsMaio[,-1:-2])
+print(colSum)
+
+paste('Smells de Maio:  ',  maioSum)
+paste('Smells de Abril:  ',  abrilSum)
+
+sum(smellsAbril[,-1:-2]$BLOB)
+
+media.blob <- mean(x = smellsAbril[,-1:-2]$BLOB)
+media.lm <- mean(x = smellsAbril[,-1:-2]$LM)
+media.sak <- mean(x = smellsAbril[,-1:-2]$SAK)
+media.cc <- mean(x = smellsAbril[,-1:-2]$CC)
+media.igs <- mean(x = smellsAbril[,-1:-2]$IGS)
+media.mim <- mean(x = smellsAbril[,-1:-2]$MIM)
+media.nlmr <- mean(x = smellsAbril[,-1:-2]$NLMR)
+media.lic <- mean(x = smellsAbril[,-1:-2]$LIC)
+
+mediaOfBadSmell = sum((media.blob + media.lm + media.sak + media.cc + media.igs + media.mim + media.nlmr + media.lic)/numCol-2)
+media <- apply(smellsAbril[,-1:-2], 2, mean)
+
+print(media)

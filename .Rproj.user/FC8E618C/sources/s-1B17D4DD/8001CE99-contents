@@ -1,0 +1,24 @@
+library(dummies)
+
+smellsAbril <- read.csv('data/bad_smells_abril.csv', header = T)
+smellsMaio <- read.csv('data/bad_smells_maio.csv', header = T)
+
+smellsAbrilOrdered <-apply(smellsAbril, 2, sort, decreasing = T)
+
+maioSum <-sum(smellsAbril[,-1:-2])
+abrilSum <- sum(smellsMaio[,-1:-2])
+
+colSum <- colSums(smellsMaio[,-1:-2])
+
+paste('Smells de Maio:  ',  maioSum)
+paste('Smells de Abril:  ',  abrilSum)
+
+sum(smellsAbril[,-1:-2]$BLOB)
+
+sum(colMeans(smellsAbril[,-1:-2]))/ncol(smellsAbril[,-1:-2])
+
+mediaCodeSmellsAbril <- mean(data.matrix(smellsAbril[,-1:-2]))
+
+
+paste('O pacote com mais bugs em Abril foi o :', head(smellsAbrilOrdered[1,2]))
+

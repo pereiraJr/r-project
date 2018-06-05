@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1528226086434.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "FE6A51FA",
+    "lastKnownWriteTime" : 1528230811,
+    "last_content_update" : 1528230811473,
+    "path" : "~/Documents/trab-final-r-analise-code-smell/Main.R",
+    "project_path" : "Main.R",
+    "properties" : {
+        "cursorPosition" : "10,31",
+        "scrollLine" : "1",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

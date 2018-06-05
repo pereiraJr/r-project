@@ -1,0 +1,14 @@
+smellsAbril <- read.csv('data/bad_smells_abril.csv', header = TRUE)
+smellsMaio <- read.csv('data/bad_smells_maio.csv', header = TRUE)
+
+print(manga$rows)
+
+maioSum <-sum(smellsAbril[,-1:-2])
+abrilSum <- sum(smellsMaio[,-1:-2])
+
+paste('Smells de Maio:  ',  maioSum)
+paste('Smells de Abril:  ',  abrilSum)
+
+media <- apply(smellsAbril[,-1:-2], 2, mean)
+
+print(media)
