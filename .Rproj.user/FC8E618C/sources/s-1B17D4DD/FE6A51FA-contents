@@ -23,11 +23,12 @@ abrilSum <- sum(smellsAbrilCleaned[,-1])
 
 sum(colMeans(smellsAbril[,-1:-2]))/ncol(smellsMaioCleaned[,-1])
 
-mediaCodeSmellsAbril <- mean(data.matrix(codeSmellsAbrilCleaned[,-1]))
+#mediaCodeSmellsAbril <- mean(data.matrix(codeSmellsAbrilCleaned[,-1]))
 
 #Removendo a Coluna de Total
-mediaCodeSmellsAbril <- mean(data.matrix(smellsAbrilCleaned[,-1:ncol(smellsAbrilCleaned)]))
+mediaCodeSmellsAbril <- mean(data.matrix(smellsAbrilCleaned[,c(-1,-ncol(smellsAbrilCleaned))]))
 
 paste('Code Smells de Abril:  ',  abrilSum)
 paste('O pacote com mais bugs em Abril foi o :', head(smellsAbrilCleaned$package_name,1))
 paste('MEDIA CODE SMELL ABRIL', mediaCodeSmellsAbril)
+
